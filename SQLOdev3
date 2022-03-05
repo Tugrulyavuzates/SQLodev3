@@ -1,0 +1,15 @@
+SELECT * from country
+WHERE country like  'A%a';
+-- Basic "like" function
+
+--To call a name with at least 6 characters I used the code below
+SELECT * from country
+WHERE country like  '_____%n';
+
+--Countries with the letter 't' in their name
+SELECT * from country
+WHERE country Ilike '%t%';
+
+--Last code is pretty much self-explanatory (get it ? 'cause it's a declarative language! just kidding)
+SELECT * FROM film
+WHERE film.length >90 AND rental_rate = 2.99 AND title LIKE 'C%';
